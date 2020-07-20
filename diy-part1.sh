@@ -9,7 +9,7 @@
 #=============================================================
 
 # fw876/helloworld
-sed -i '$a src-git luci-app-ssr-plus https://github.com/a331432314/helloworld.git' feeds.conf.default
+sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Lienol/openwrt-package
-sed -i '$a src-git lienol https://github.com/a331432314/openwrt-package.git' feeds.conf.default
+sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package.git' feeds.conf.default
